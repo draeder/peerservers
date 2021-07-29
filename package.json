@@ -1,0 +1,27 @@
+{
+  "name": "peerservers",
+  "version": "1.0.0",
+  "description": "Connect peers together no matter which server they join",
+  "main": "peer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draeder/peerservers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/draeder/peerservers/issues"
+  },
+  "homepage": "https://github.com/draeder/peerservers#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dht-keyvalue": "^1.1.1",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.3",
+    "socket.io-client": "^4.1.3"
+  }
+}
