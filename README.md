@@ -1,5 +1,5 @@
 # :construction: Peerservers :construction:
-### Peerservers is a work in progress effort to enable peer-to-peer communication between browsers without any centralized tracker servers.
+### Peerservers is a work in progress effort to enable peer-to-peer communication between browsers without any centralized tracker servers
 
 One of the challenges with P2P applications, particularly for web browsers, is the requirement for centralized WebRTC signaling servers. What that means is web browser peers cannot talk to each other unless they share the same signaling server. That is is a big impediment to the realization of true decentralization. 
 
