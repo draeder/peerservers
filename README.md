@@ -3,7 +3,7 @@
 
 One of the challenges with P2P applications, particularly for web browsers, is the requirement for centralized WebRTC signaling servers. What that means is web browser peers cannot talk to each other unless they share the same signaling server. That is is a big impediment to the realization of true decentralization. 
 
-Peerservers wants to solve this by decentralizing the need for individual signaling servers altogether by decentralizing the tracker servers themselves.
+Peerservers wants to solve this by decentralizing the need for individual signaling servers altogether by decentralizing the signaling servers themselves.
 
 The basic idea is that peerservers nodes use the bittorrent mainline DHT as a way to store information about the applications, nodes and peers, then relay the WebRTC signaling from peers on one node to peers on another node based on an application specific infohash.
 
