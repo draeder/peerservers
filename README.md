@@ -9,7 +9,7 @@ The basic idea is that peerservers nodes use the bittorrent mainline DHT as a wa
 
 When this project is successful, the next phase will be to explore how to use this concept to extend [bittorrent-tracker](bittorrent-tracker link) to (optionally) enable this same kind of functionality for anyone who wants to run a tracker; ideally to (optionally) fully distribute all webtorrent tracker servers using this approach (a lofty goal, I know!).
 
-## Status :construction:
+## :construction: Status :construction:
 Currently under active development and is in R&D status. 
 
 It is unviable for use as of this revision. Please check back later!
