@@ -7,7 +7,7 @@ Peerservers wants to solve this by decentralizing the need for individual signal
 
 The basic idea is that peerservers nodes use the bittorrent mainline DHT as a way to store information about the applications, nodes and peers, then relay the WebRTC signaling from peers on one node to peers on another node based on an application specific infohash.
 
-When this project is successful, the next phase will be to explore how to use this concept to extend [bittorrent-tracker](bittorrent-tracker link) to (optionally) enable this same kind of functionality for anyone who wants to run a tracker; ideally to (optionally) fully distribute all webtorrent tracker servers using this approach (a lofty goal, I know!).
+When this project is successful, the next phase will be to explore how to use this concept to extend [bittorrent-tracker](https://github.com/webtorrent/bittorrent-tracker) to (optionally) enable this same kind of functionality for anyone who wants to run a tracker; ideally to (optionally) fully distribute all webtorrent tracker servers using this approach (a lofty goal, I know!).
 
 ## :construction: Status :construction:
 Currently under active development and is in R&D status. 
@@ -19,6 +19,6 @@ Peerservers connects peers together based on a unique appplication name regardle
 
 Peerservers addresses this using a novel approach. Each peerservers node uses the bittorrent mainline DHT as a store for  each application and the nodes responsible for for that aapplication. When a new peer joins Node **N**, that node uses [dht-keyvalue](https://github.com/draeder/dht-keyvalue) to lookup that application on the DHT network. If the application doesn't already exist, that node creates a new DHT record for the application with the peer ID.
 
-As more peers connect to other peerservers nodes, the nodes lookup the DHT record to find out which other nodes are aware of the application the peers want to connect to. The new peers then create a WebRTC offer using [simple-peer](simplepeer link) and send it to the node those are on. That node opens a websockets connection for each other node that has peers for the application and transmits the offer. Those nodes forward the offer to the peers connected to them. The peers respond with an answer and the peers are then connected.
+As more peers connect to other peerservers nodes, the nodes lookup the DHT record to find out which other nodes are aware of the application the peers want to connect to. The new peers then create a WebRTC offer using [simple-peer](https://github.com/feross/simple-peer) and send it to the node those are on. That node opens a websockets connection for each other node that has peers for the application and transmits the offer. Those nodes forward the offer to the peers connected to them. The peers respond with an answer and the peers are then connected.
 
 Since the peers are now connected, peerservers nodes disconnect the websockets connection because it is no longer needed.
