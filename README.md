@@ -12,7 +12,7 @@ When this project is successful, the next phase will be to explore how to use th
 ## :construction: Status :construction:
 Currently under active development and is in R&D status. 
 
-It is unviable for use as of this revision. Please check back later!
+:warning: It is unviable for use as of this revision. Please check back later! :warning:
 
 ## How it works (or, as of this version, how it **will work**)
 Peerservers connects peers together based on a unique appplication name regardless of which node the peer contacted first.
