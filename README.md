@@ -14,7 +14,7 @@ Currently under active development and is in R&D status.
 
 :warning: It is unviable for use as of this revision. Please check back later! :warning:
 
-## How it works (or, as of this version, how it **will work**)
+## How it works (or, as of this version, how it **will work**) -- this is in flux. Webtorrent extensions offers a better way that is being explored.
 Peerservers connects peers together based on a unique appplication name regardless of which node the peer contacted first.
 
 Peerservers addresses this using a novel approach. Each peerservers node uses the bittorrent mainline DHT as a store for  each application and the nodes responsible for for that aapplication. When a new peer joins Node **N**, that node uses [dht-keyvalue](https://github.com/draeder/dht-keyvalue) to lookup that application on the DHT network. If the application doesn't already exist, that node creates a new DHT record for the application with the peer ID.
